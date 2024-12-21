@@ -48,7 +48,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/notification_container"
-            android:padding="20dp"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="18dp"
             android:orientation="vertical"
             android:layout_marginBottom="20dp"
             >
@@ -72,7 +74,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Play sound for a notification"
+                        android:text="Play a sound for notification"
                         android:textSize="12dp" />
                 </LinearLayout>
 
@@ -80,7 +82,8 @@
                     android:id="@+id/soundSwitch"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="right" />
+                    android:gravity="right"
+                    />
             </LinearLayout>
 
             <View
@@ -108,7 +111,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Short vibration for notification"
+                        android:text="Short vibration for notifications"
                         android:textSize="12dp"
                         />
                 </LinearLayout>
@@ -143,7 +146,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Turn on the hardware LED for a notification"
+                        android:text="Turn on the hardware LED for a notifications"
                         android:textSize="12dp"
                         />
                 </LinearLayout>
@@ -153,19 +156,15 @@
                     android:layout_height="wrap_content" />
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:background="@color/material_dynamic_neutral80"
-                android:layout_marginVertical="12dp"
-                />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/notification_container"
-            android:padding="20dp"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="18dp"
             android:orientation="vertical"
             >
             <LinearLayout
@@ -272,13 +271,6 @@
                     android:gravity="end"
                     android:layout_height="wrap_content" />
             </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:background="@color/material_dynamic_neutral80"
-                android:layout_marginVertical="12dp"
-                />
         </LinearLayout>
         <Button
             android:id="@+id/saveBtn"
